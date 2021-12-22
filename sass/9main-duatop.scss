@@ -120,6 +120,42 @@ main {position: relative;height: 100vh;}
   }
 }
 
+/*Float Bar*/
+.floatbar{width: 166px;height: 628px;background: url(../images/floatside.png) no-repeat top center;position: fixed;right: 0;top: 20%;z-index: 15;
+  ul{list-style: none;display: flex;justify-content: center;align-items: center;flex-direction: column;font-size: 12px;
+    li{padding:0.3rem 0;
+      a{display: flex;align-items: center;align-content:center;color: #fff;
+        &:hover{filter: brightness(120%);}
+      }
+      a.store{background: #050f15;padding:0.5rem;border-radius:6px;color:#fff;width: 124px;height: 39px;
+        img{width: 28px;height: 28px;object-fit: cover;}
+        span{line-height: 1;}
+        &:hover{background: #0c2433;}
+      }
+      a.naptien{position: relative;
+        .light{
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          overflow: hidden;
+          -webkit-filter: brightness(2);
+          filter: brightness(2);
+          -webkit-mask-size: 300% 200%;
+          mask-size: 300% 200%;
+           -webkit-mask-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0) 30%, #fff 50%, rgba(255,255,255,0) 60%);
+          mask-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0) 40%, #fff 50%, rgba(255,255,255,0) 60%);
+          -webkit-animation: laluot linear 2.5s infinite 1s;
+          animation: laluot linear 2.5s infinite 1s;
+        }
+      }
+      a.linktc{background: url(../images/bg-btn.png) no-repeat top center;display: flex;align-items: center;justify-content: center;width: 124px;height: 39px;}
+      a.totop{display: block;text-indent: -9999px;}
+    }
+  }
+}
+
+
 /*==FOOTER=*/
 .footer{min-height: 200px;background-color:#f2f6fc;border-top:1px solid #2d638da8;
   .footer-content{display: flex;flex-direction: column;align-items: center;justify-content: center;

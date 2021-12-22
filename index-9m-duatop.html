@@ -11,6 +11,32 @@
 </head>
 <body>
 	<div class="wrapper" id="dkLogin">
+		<div class="floatbar d-none d-lg-block">
+			<ul class="py-5 px-4">
+				<li><a href="#"><img src="images/qrcode.png" alt=""/></a></li>
+				<li>
+					<a class="store" href="#">
+						<img src="images/icon-ios.png" alt="" class="mx-2"/>
+						<span>Tải trên Appstore</span>
+					</a>
+				</li>
+				<li>
+					<a class="store" href="#">
+						<img src="images/icon-android.png" alt="" class="mx-2"/>
+						<span>Tải trên Google Play</span>
+					</a>
+				</li>
+				<li><a href="#" class="linktc">Trang chủ</a></li>
+				<li><a href="#" class="linktc">Fanpage</a></li>
+				<li>
+					<a href="#" class="naptien">
+						<img class="d-block" src="images/btn-naptien-fl.png" alt=""/>
+						<img class="d-block light" src="images/btn-naptien-fl.png" alt="" />
+					</a>
+				</li>
+				<li><a href="javascript:void(0)" id="back-to-top" class="totop d-block p-4 mt-3">To top</a></li>
+			</ul>
+		</div><!--End Floatbar-->
 		<!----Popup thể lệ-->
 		<div class="modal fade modal-custom" id="thele" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl modal-dialog-centered">
@@ -267,6 +293,15 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script>
+		$(document).ready(function(){
+			// scroll body to 0px on click
+			$('#back-to-top').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 400);
+				return false;
+			});
+		});
 		$(document).ready(function() {
 		   updateScale1();
 		 });
