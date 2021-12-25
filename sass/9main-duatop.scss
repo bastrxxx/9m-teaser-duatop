@@ -50,6 +50,16 @@ main {position: relative;height: 100vh;}
   }
 }
 
+/*==CHUYENTRANG=*/
+#list-example{display: flex;flex-direction: column;position: fixed;height: 367px;top: 50%;left:2%;background: url(../images/bg-chuyentrang.png) no-repeat left center;z-index: 10;justify-content: center;grid-gap:20px;align-items: center;transform: translateY(-180px);
+  a{background: transparent;border: none;position: relative;font-size: 18px;font-weight: 600;padding: 0.5rem 1.5rem;color:var(--whitecolor);text-shadow: 0px 1px 2px #343434, 0px -1px 2px #343434;
+    &:before{content: "";background: url(../images/icon-ct.png) no-repeat left center;width: 36px;height: 36px;position: absolute;left: -18px;top: 0px;}
+  }
+  a.active{color: #faffb1;
+    &:before{background-image: url(../images/icon-ct-at.png);}
+  }
+}
+
 /*==chuoisukien*/
 .chuoisukien{height: 834px;background: url(../images/bg-2.webp) no-repeat bottom center;position: relative;z-index: 11;
   .cloud{position: absolute;bottom:-70px;z-index: 3;margin-left:50%;transform: translateX(-50%);}

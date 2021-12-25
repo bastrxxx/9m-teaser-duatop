@@ -61,7 +61,11 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-
+		<div id="list-example" class="list-group">
+			<a class="list-group-item list-group-item-action" href="#list-item-1">Trang chủ</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-2">Chuỗi sự kiện</a>
+			<a class="list-group-item list-group-item-action" href="#list-item-3">Bảng xếp hạng</a>
+		</div>
 		<div id="layout" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 			<img class="tren18" src="images/18tuoi.jpg" alt=""/>
 			<div class="header" id="list-item-1">
@@ -78,7 +82,7 @@
 			<!---header-->
 
 			<!---Chuoi su kien-->
-			<div class="chuoisukien">
+			<div class="chuoisukien" id="list-item-2">
 				<div class="cloud"><img src="images/may.webp" alt=""/></div>
 				<div class="cloud gachda wiggleef"><img src="images/gachda.webp" alt=""/></div>
 				<div class="container">
@@ -109,7 +113,7 @@
 			</div>
 
 			<!---Bang xep hang-->
-			<div class="bangxephang">
+			<div class="bangxephang" id="list-item-3">
 				<div class="container">
 					<div class="khungbxh">
 						<div class="dateend text-center">
@@ -302,6 +306,9 @@
 				return false;
 			});
 		});
+		var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+			target: '#list-example'
+		})
 		$(document).ready(function() {
 		   updateScale1();
 		 });
