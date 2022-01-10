@@ -83,10 +83,10 @@ main {position: relative;height: 100vh;}
 }
 
 /*==Bang xep hang====*/
-.bangxephang{width: 100%;height: 1301px;background: url(../images/bg-3.webp) no-repeat top center;
+.bangxephang{width: 100%;height: 1089px;background: url(../images/bg-3.webp) no-repeat top center;
   .container{
-    .khungbxh{position:relative;z-index: 15;background: url(../images/bg-bxh.webp) no-repeat top center;height: 1073px;width: 100%;padding-top:155px;
-      .khungin{width: 921px;height: 594px;margin-top: 55px;position: relative;
+    .khungbxh{position:relative;z-index: 15;background: url(../images/bg-bxh.webp) no-repeat top center;height: 1073px;width: 100%;padding-top:125px;
+      .khungin{width: 921px;height: 594px;margin-top:30px;position: relative;
         .nav{position: absolute;right:-190px;top:50px;
           button{width: 143px;height: 221px;text-indent: -9999px;margin-bottom:24px;transition:0.2s ease;filter: grayscale(1);
             &:nth-child(1){background: url(../images/btn-dtlc.webp) no-repeat top center;}
